@@ -24,6 +24,7 @@ void connect_to_wifi() {
       WiFi.localIP().toString().c_str());
     Serial.println(msg);
 
+    blink(5, 50, 50);
     delay(500);
   }
 
