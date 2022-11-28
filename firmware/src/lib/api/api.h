@@ -2,5 +2,4 @@
 // Use of this source code is governed by the GPL-3.0
 // license that can be found in the LICENSE file.
 
-void blink(int on, int off);
-void mblink(int count, int on, int off);
+int uploadBatteryVoltage(WiFiClient client, float voltage);

@@ -12,7 +12,7 @@ void blink(int on, int off) {
   delay(off);
 }
 
-void blink_multiple(int count, int on, int off) {
+void mblink(int count, int on, int off) {
   for (int i = 0; i < count; i++) {
     blink(on, off);
   }
