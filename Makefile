@@ -7,8 +7,8 @@
 #
 # Variables
 #
-SERIAL_PORT ?= /dev/cu.usbserial-01D231D2
-FQBN ?= esp8266:esp8266:huzzah
+SERIAL_PORT ?= /dev/cu.usbserial-0001
+FQBN ?= esp32:esp32:nodemcu-32s
 
 #
 # Rules
@@ -16,14 +16,14 @@ FQBN ?= esp8266:esp8266:huzzah
 dev: upload monitor
 
 compile:
-	@echo "Compiling ESP8266 firmware"
+	@echo "Compiling ESP32 firmware"
 	@arduino-cli compile --fqbn $(FQBN) firmware
 
 upload: compile
-	@echo "Uploading ESP8266 firmware"
+	@echo "Uploading ESP32 firmware"
 	@arduino-cli upload -p $(SERIAL_PORT) --fqbn $(FQBN) firmware
 
 monitor:
-	@echo "Monitoring ESP8266 serial port"
+	@echo "Monitoring ESP32 serial port"
 	@screen $(SERIAL_PORT) 115200
 
