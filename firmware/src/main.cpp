@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 #include <Arduino.h>
-#include <ESP8266WiFi.h>
+#include <WiFi.h>
 #include "lib/api/api.h"
 #include "lib/led/led.h"
 #include "lib/wifi/wifi.h"

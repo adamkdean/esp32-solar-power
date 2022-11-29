@@ -3,8 +3,8 @@
 // license that can be found in the LICENSE file.
 
 #include <Arduino.h>
-#include <ESP8266HTTPClient.h>
-#include <ESP8266WiFi.h>
+#include <HTTPClient.h>
+#include <WiFi.h>
 #include <string>
 #include "../../../config.h"
 #include "api.h"
