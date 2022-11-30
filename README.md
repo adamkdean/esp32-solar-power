@@ -1,4 +1,4 @@
-# esp8266 solar power
+# esp32 solar power
 
 Solar power project with esp32 (specifically `ESP32-WROOM-32 (Node-MCU-32S)`).
 
@@ -8,13 +8,13 @@ For the `ESP32-WROOM-32 (Node-MCU-32S)` the FQBN is `esp32:esp32:nodemcu-32s`.
 
 - [x] Deploy firmware
 - [x] Connect to WiFi
-- [ ] Read battery box 1 voltage (3.8v max reduced to 1v via voltage divider)
+- [x] Read battery box 1 voltage (3.8v max reduced to 1v via voltage divider)
 - [ ] Read battery box 2 voltage (3.8v max reduced to 1v via voltage divider)
 - [ ] Read solar voltage 1 (5v max reduced to 1v via voltage divider)
 - [ ] Read solar voltage 2 (5v max reduced to 1v via voltage divider)
-- [ ] Post voltage readings to electronics-api
+- [x] Collect readings
+- [x] Post voltage readings to electronics-api
 - [ ] Connect solar panels
-- [ ] Collect readings
 
 ## ADC
 
